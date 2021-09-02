@@ -3,7 +3,7 @@ import Tmdb from './TmdbApi';
 
 import FeaturedMovie from './components/FeaturedMovie';
 import MovieRow from './components/MovieRow';
-import Header from './components/FeaturedMovie/Header';
+import Header from './components/Header';
 
 import './App.css'
 

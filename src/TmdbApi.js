@@ -1,7 +1,8 @@
-// Crie sua própia apiKey em themoviedb.org para acessar os dados;
 import apiKey from './apiKey';
 
+// Coloque sua chave da api aqui:
 const API_KEY = apiKey;
+
 const API_BASE = 'https://api.themoviedb.org/3';
 
 /*

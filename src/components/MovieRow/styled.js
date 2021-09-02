@@ -56,4 +56,11 @@ export const MovieRow = styled.div`
             transform:scale(1);
         }
     }
+
+    @media (max-width: 770px) {
+        .movieRow--left,
+        .movieRow--right {
+            opacity: 1;
+        }
+    }
 `;

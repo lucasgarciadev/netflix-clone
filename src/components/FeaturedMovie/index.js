@@ -4,6 +4,11 @@ import {Featured} from './styled';
 export default ({item}) => {
 
     let firstDate = new Date(item.first_air_date);
+    let description = item.overview;
+
+    if(description.length > 200) {
+        description = description.substring(0, 200) + '...';
+    }
 
     let genres = [];
     for(let i in item.genres) {
@@ -25,7 +30,7 @@ export default ({item}) => {
                         <div className="featured--seasons">
                             {item.number_of_seasons} Temporada{item.number_of_seasons > 1 ? 's': ''}
                         </div>
-                        <div className="featured--description">{item.overview}</div>
+                        <div className="featured--description">{description}</div>
                         <div className="featured--buttons" >
                             <a href={`/watch/${item.id}`} className="featured--watchButton"  >► Assitir</a>
                             <a href={`/list/add/${item.id}`} className="featured--mylistButton" >+ Minha Lista</a>

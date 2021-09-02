@@ -86,7 +86,33 @@ export const Featured = styled.section`
             color: #999;
         }
 
+    }
 
+    @media (max-width: 770px) {
+        height: 110vh;
 
+        .featured--name {
+            font-size:40px;
+        }
+        .featured--info {
+            font-size: 16px;
+
+            .featured--description {
+                font-size:14px;
+                max-width:100%;
+                margin-right:10px;
+                margin-top:5px;
+            }
+
+            .featured--watchButton,
+            .featured--mylistButton {
+                font-size:16px;
+            }
+            
+            .featured--genres {
+                font-size:14px;
+            }
+        }
+        
     }
 `;
